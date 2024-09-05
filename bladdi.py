@@ -1,83 +1,96 @@
 import turtle as trtl
+painter = trtl.Turtle()
+painter.speed(10)
 
-flowers_options = ["Daisy", "Lily", "Roses", "Marigold", "Tulip"] #avaiable flowers that the application can draw
-print(flowers_options)
+flowers = {
+    "flower" : "Daisy",
+    "flower" : "Lily", 
+    "flower" : "Marigold",
+    "flower" : "Rose",
+    "flower" : "Tulip"
+}
 
-def draw_single_flower():
-            flower_type = input("What type of flower do you want me to draw?: ")
-            if flower_type in flowers_options and flower_type == "Daisy" or flower_type == "daisy".lower():
-                print("Sure, I will draw a daisy")
-                turtle = open(trtl)
-                screen = trtl.Screen()
-                painter = trtl.Turtle()
-                #flower petal
-                for flower in range(6):
-                    painter.pendown()
-                    painter.begin_fill()
-                    painter.color("pink")
-                    painter.circle(30)
-                    painter.right(60)
-                    painter.penup()
-                    painter.goto(0,0)
-                    painter.pendown()
-                    painter.end_fill()
-            #stem of the flower        
-            painter.penup()
-            painter.goto(0,-30)
-            painter.pendown()
-            painter.begin_fill()
-            painter.color("yellow")
-            painter.circle(30)
-            painter.end_fill()
+flowers = ["Daisy", "Lily", "Marigold", "Rose", "Tulip"] #available flowers
+print("The available flowers are", flowers)
 
-            painter.penup()
-            painter.goto(0,-60)
-            painter.pendown()
-            painter.pencolor("Green")
-            painter.pensize(10)
-            painter.right(90)
-            painter.forward(100)
-
-def draw_multiple_flowers(number_of_flowers):
-    for flower in range(number_of_flowers):
-        draw_single_flower()
-        screen = trtl.Screen()
-        painter = trtl.Turtle()
-
-        for i in range(6):
-            painter.pendown()
-            painter.begin_fill()
-            painter.color("pink")
-            painter.circle(30)
-            painter.right(60)
-            painter.penup()
-            painter.goto(0,0)
-            painter.pendown()
-            painter.end_fill()
+flower_input = ("Give me your prompt: ")
+split = flower_input.split()
+for i in split:
+    if i in flowers:
+        flower=i
+        print(flower)
+    if i.isnumeric() == True:
+        numberOfFlowers=i
+        print(f"Number of flowers: {numberOfFlowers}")
         
-        #stem of the flower        
-        painter.penup()
-        painter.goto(0,-30)
-        painter.pendown()
+
+class Flower:
+    def __init__(self, num_petals, num_flowers, turtle, flower_type, flower_input, split):
+        self.num_petals = num_petals
+        self.num_flowers = num_flowers
+        self.flower_type = flower_type
+        self.turtle = turtle
+        self.turtle = trtl.Turtle()
+        self.flower_input = flower_input
+        self.split = split
+
+    def draw_daisy():
+        painter = trtl.Turtle()
         painter.begin_fill()
-        painter.color("yellow")
+        painter.color("pink")
         painter.circle(30)
-        painter.end_fill()
-
+        painter.right(60)
         painter.penup()
-        painter.goto(0,-60)
+        painter.goto(0,0)
         painter.pendown()
-        painter.pencolor("Green")
-        painter.pensize(10)
-        painter.right(90)
-        painter.forward(100)
+        painter.end_fill()
+            
 
-number_of_flowers_to_draw = int(input("How many flowers do you want me to draw?: "))
-draw_multiple_flowers(number_of_flowers_to_draw)
+    painter.penup()
+    painter.goto(0,-60)
+    painter.pendown()
+    painter.begin_fill()
+    painter.color("pink")
+    painter.circle(30)
+    painter.end_fill()
 
-trtl.hideturtle()
-trtl.done()
+    painter.penup()
+    painter.goto(-30, -30)
+    painter.pendown()
+    painter.begin_fill()
+    painter.color("pink")
+    painter.circle(30)
+    painter.end_fill()
+
+    painter.penup()
+    painter.goto(30, -30)
+    painter.pendown()
+    painter.begin_fill()
+    painter.color("pink")
+    painter.circle(30)
+    painter.end_fill()
+
+    painter.penup()
+    painter.goto(0,-60)
+    painter.pendown()
+    painter.pencolor("Green")
+    painter.pensize(10)
+    painter.right(90)
+    painter.forward(100)
+
+    painter.penup()
+    painter.goto(-10,-5)
+    painter.pendown()
+    painter.begin_fill()
+    painter.color("yellow")
+    painter.circle(10)
+    painter.end_fill()
+
+    draw_daisy()
+
 wn = trtl.Screen()
 wn.mainloop()
+
+
 
 
