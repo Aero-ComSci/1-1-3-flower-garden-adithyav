@@ -2,6 +2,8 @@
 ## Partners: Aditya Jayanthi, Prabhav Yeddanapudi
 ## Team Name: adithyav
 
+### Description of the code: For this assignment, we had to tokenize a user input, and customize it so the program can turn the user's wishes into reality.
+
 ## Example Prompt:
 ![image](https://github.com/user-attachments/assets/d8ce4035-4d80-4e10-b699-c07c86cd3cfc)
 
@@ -18,4 +20,6 @@ In order to see all of the flowers, you have to put the turtle application in fu
 However, you can put whatever you want in the code; these 3 requirements must be somewhere in the prompt. Commas are okay, but the prompt has to contain the number of petals and type of power along with the number of flower
 
 ### How the terminal should look
-![image](https://github.com/user-attachments/assets/cc70e69b-1733-46a3-b1a4-863d4ba56b9c)
+![image](https://github.com/user-attachments/assets/cc70e69b-1733-46a3-b1a4-863d4ba56b9c)4
+
+### We are proud of our perseverance, despite our not so vast knowledge regarding python.
