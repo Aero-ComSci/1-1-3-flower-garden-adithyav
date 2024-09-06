@@ -105,5 +105,5 @@ for n in range(int(number_of_flowers)):
     x += 200  
 
 trtl.done()
-wn = trtl.Screen()  #ends the turtle program to avoid it from ending or closing the window
+wn = trtl.Screen()  #ends the turtle program to avoid it from closing the window
 wn.mainloop()
