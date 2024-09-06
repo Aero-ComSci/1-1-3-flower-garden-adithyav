@@ -1,48 +1,55 @@
 import turtle as trtl
+trtl.bgcolor("lightblue")
 
-flowers_upper = ["Daisies", "Lilies", "Marigolds", "Roses", "Tulips"]
-flowers_lower = ["daisies", "lilies", "marigolds", "roses", "tulips"]
+flowers_color = {
+    "daisy" : "pink",
+    "lily" : "orange",
+    "marigold" : "yellow",   #corresponding flowers with their respective color
+    "rose" : "red",
+    "tulips" : "purple"
+}
+
+flowers_upper = ["Daisies", "Lilies", "Marigolds", "Roses", "Tulips"] #these are the available flowers that return an uppercase value
+flowers_lower = ["daisies", "lilies", "marigolds", "roses", "tulips"] #these are the available flowers that return an lowercase value
 print("The available flowers are", flowers_upper)
+
 flower_input = input("Give me your prompt: ").lower()
 split = flower_input.split()
-index=0
-numberOfFlowers=0
-numberOfPetals=0
-for i in split:
+index = 0
+number_of_flowers = 0 #base number of flowers before a user inputs anything
+number_of_petals = 0  #base number of petals before user's preference
+
+for i in split: #this splits the user's input so the program can compile each individual componenent 
     if i in flowers_lower:
-        flower=i
+        flower = i
         print(flower)
     if i.isnumeric() == True:
         if split[index+1] in flowers_lower:
-            numberOfFlowers=i
-            
+            number_of_flowers = i
         else:
             if split[index+1] in ["petal","petals"]:
-                numberOfPetals=i
-    index+=1
+                number_of_petals = i
+    index += 1    #increments the petal index by 1 from the starting point of 0 petals
     
 if flower in "roses":
     petal_color = "red"
 elif flower in "daisies":
     petal_color = "pink"
 elif flower in "marigolds":
-    petal_color = "yellow"
+    petal_color = "yellow"  #conditions that determine whether the flower name is applicable, and if it fits the requirements
 elif flower in "tulips":
     petal_color = "purple"
 elif flower in "lilies":
-    petal_color = "purple"
+    petal_color = "orange"
 
-
-
-
-def draw_circle(radius, color):
+def draw_circle(radius, color):  #sets the initial guidelines for the flower
     painter = trtl.Turtle()
     painter.fillcolor(color)
     painter.begin_fill()
     painter.circle(radius)
     painter.end_fill()
 
-def petal(x, y, num_petals, petal_color):
+def petal(x, y, num_petals, petal_color):  #function that draws the flowers' petals
     painter = trtl.Turtle()
     painter.penup()
     painter.goto(-315+x,50+y)
@@ -58,12 +65,12 @@ def petal(x, y, num_petals, petal_color):
         painter.rt(80)
         painter.end_fill()
 
-def draw_flower(set_x, set_y, num_petals, petal_color):
+def draw_flower(set_x, set_y, num_petals, petal_color):  #main function that draws the flower
     painter = trtl.Turtle()
     x,y=painter.pos()
 
-    x += set_x
-    y += set_y
+    x += set_x  #x coordinate
+    y += set_y  #y coordinate
 
     #stem
     painter.penup()
@@ -77,7 +84,7 @@ def draw_flower(set_x, set_y, num_petals, petal_color):
     #petals
     petal(x, y, num_petals, petal_color)
 
-    #middle part
+    #bud (yellow circle in the center)
     painter.pensize(2)
     painter.penup()
     painter.goto(-270+x,30+y)
@@ -89,10 +96,10 @@ def draw_flower(set_x, set_y, num_petals, petal_color):
 
 x = -300
 y = 0
-for n in range(int(numberOfFlowers)):
-    draw_flower(x, y, int(numberOfPetals), petal_color)  
+for n in range(int(number_of_flowers)):
+    draw_flower(x, y, int(number_of_petals), petal_color)  #draws the final flower with the number of petals, and the color of the petals
     x += 200  
-    
 
-wn = trtl.Screen()
+trtl.done()
+wn = trtl.Screen()  #ends the turtle program to avoid it from ending or closing the window
 wn.mainloop()
