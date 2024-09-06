@@ -45,7 +45,7 @@ def draw_circle(radius, color):
 def petal(x, y, num_petals, petal_color):
     painter = trtl.Turtle()
     painter.penup()
-    painter.goto(-415+x,50+y)
+    painter.goto(-315+x,50+y)
     painter.pendown()
     painter.color(petal_color)
 
@@ -67,7 +67,7 @@ def draw_flower(set_x, set_y, num_petals, petal_color):
 
     #stem
     painter.penup()
-    painter.goto(-400+x,-100+y)
+    painter.goto(-300+x,-100+y)
     painter.pendown()
     painter.pensize(10)
     painter.left(90)
@@ -80,14 +80,14 @@ def draw_flower(set_x, set_y, num_petals, petal_color):
     #middle part
     painter.pensize(2)
     painter.penup()
-    painter.goto(-370+x,30+y)
+    painter.goto(-270+x,30+y)
     painter.pendown()
     painter.begin_fill()
     painter.color("yellow")
     painter.circle(30)
     painter.end_fill()
 
-x = -400
+x = -300
 y = 0
 for n in range(int(numberOfFlowers)):
     draw_flower(x, y, int(numberOfPetals), petal_color)  
