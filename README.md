@@ -1,31 +1,21 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/CH30njZ-)
-# 1.1.3FlowerGarden
+# 1.1.3 Flower Garden (Due 9/6/2024)
+## Partners: Aditya Jayanthi, Prabhav Yeddanapudi
+## Team Name: adithyav
 
-Flower activity 
-AI challenge -
+## Example Prompt:
+![image](https://github.com/user-attachments/assets/d8ce4035-4d80-4e10-b699-c07c86cd3cfc)
 
-Your Program must do the following:
-1. Take user input and generate a drawing of specific flowers and their quantity using turtle.
+## Result from the code:
+![image](https://github.com/user-attachments/assets/53b4b691-1f4b-4e8c-91ac-13630dc1e0db)
 
-How???
-Use 1.1.3 for guidance
+In order to see all of the flowers, you have to put the turtle application in full screen.
 
--- Tokenize user input
+## Steps/Requirements:
+1. Type the number of flowers (only a whole integer)
+2. Type in your desired flower type ("Daisy," "Marigold," "Lily," "Rose," "Tulip")
+3. Enter the number of petals you want (only a whole integer)
+## ALL OF THESE MUST BE TRUE FOR THE PROGRAM TO RUN!!!
+However, you can put whatever you want in the code; these 3 requirements must be somewhere in the prompt. Commas are okay, but the prompt has to contain the number of petals and type of power along with the number of flower
 
-Compare each of the tokens against a list with 5 flowers your program can draw
-
-Compare each of the tokens to see if it has a quantity
-
-Your program can deny and give the user some guidance.
-
-  [Tokenize user input ](https://www.google.com)
-
-  Obtain quantity is num
-  Obtain shape -- if in dictionary common shapes
-  Based on flower detected by user input in dict create flower
-
-Create a class flower
-Init takes num petals, num flowers, type of flower
-Creates a flower(s)
-
-Fun for different draw methods
+### How the terminal should look
+![image](https://github.com/user-attachments/assets/cc70e69b-1733-46a3-b1a4-863d4ba56b9c)
