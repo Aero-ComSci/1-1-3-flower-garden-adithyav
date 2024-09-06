@@ -1,3 +1,7 @@
+#You have to maximize the entire turtle application to be able to see the flower drawings
+#We did this so all the flowers could fit on the screen if the user prompted the program to draw more than 8 flowers
+
+
 import turtle as trtl
 trtl.bgcolor("lightblue")
 
