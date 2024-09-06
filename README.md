@@ -13,7 +13,7 @@ In order to see all of the flowers, you have to put the turtle application in fu
 ## Steps/Requirements:
 1. Type the number of flowers (only a whole integer)
 2. Type in your desired flower type ("Daisy," "Marigold," "Lily," "Rose," "Tulip")
-3. Enter the number of petals you want (only a whole integer)
+3. Enter the number of petals you want (as a whole integer)
 ## ALL OF THESE MUST BE TRUE FOR THE PROGRAM TO RUN!!!
 However, you can put whatever you want in the code; these 3 requirements must be somewhere in the prompt. Commas are okay, but the prompt has to contain the number of petals and type of power along with the number of flower
 
