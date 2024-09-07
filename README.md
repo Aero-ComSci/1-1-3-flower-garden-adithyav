@@ -20,6 +20,6 @@ In order to see all of the flowers, you have to put the turtle application in fu
 However, you can put whatever you want in the code; these 3 requirements must be somewhere in the prompt. Commas are okay, but the prompt has to contain the number of petals and type of flower along with the number of flowers.
 
 ### How the terminal should look
-![image](https://github.com/user-attachments/assets/cc70e69b-1733-46a3-b1a4-863d4ba56b9c)4
+![image](https://github.com/user-attachments/assets/cc70e69b-1733-46a3-b1a4-863d4ba56b9c)
 
 ### We are proud of our perseverance, despite our not so vast knowledge regarding python.
