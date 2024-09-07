@@ -17,7 +17,7 @@ In order to see all of the flowers, you have to put the turtle application in fu
 2. Type in your desired flower type ("Daisy," "Marigold," "Lily," "Rose," "Tulip")
 3. Enter the number of petals you want (as a whole integer)
 ## ALL OF THESE MUST BE TRUE FOR THE PROGRAM TO RUN!!!
-However, you can put whatever you want in the code; these 3 requirements must be somewhere in the prompt. Commas are okay, but the prompt has to contain the number of petals and type of power along with the number of flower
+However, you can put whatever you want in the code; these 3 requirements must be somewhere in the prompt. Commas are okay, but the prompt has to contain the number of petals and type of flower along with the number of flowers.
 
 ### How the terminal should look
 ![image](https://github.com/user-attachments/assets/cc70e69b-1733-46a3-b1a4-863d4ba56b9c)4
